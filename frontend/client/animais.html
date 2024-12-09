@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Cadastro Pet</title>
+</head>
+
+<body>
+    <a class="voltar" href="../home.html">VOLTAR</a>
+    <div class="modalBG">
+        <div class="modal">
+            <div class="close">x</div>
+            <h1>Editar Animal</h1>
+            <form id="editForm">
+                <div class="labels">
+                    <label for="animalName">Nome do Animal:</label>
+                    <input type="text" id="editName" name="nome" value="Nome Aqui" required>
+                </div>
+                <div class="labels">
+                    <label for="animalAge">Idade:</label>
+                    <input type="number" id="editAge" name="idade" value="0" required>
+                </div>
+                <div class="labels">
+                    <label for="animalType">Tipo:</label>
+                    <input type="text" id="editType" name="tipo" value="Tipo Aqui" required>
+                </div>
+                <div class="labels">
+                    <label for="donos">Dono:</label>
+                    <select id="editDonos" name="donos" required class="select-pet">
+                    </select>
+                </div>
+                <div class="labels">
+                    <button type="submit">Salvar Animal</button>
+                    <div id="delete">Excluir Animal</div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section id="background-cadastro-cliente">
+        <form id="animalForm" class="cliente-form">
+            <h1>Cadastro de Animais</h1>
+            <div class="labels">
+                <label for="animalName">Nome do Animal:</label>
+                <input type="text" id="animalName" name="nome" required>
+            </div>
+            <div class="labels">
+                <label for="animalAge">Idade:</label>
+                <input type="number" id="animalAge" name="idade" required>
+            </div>
+            <div class="labels">
+                <label for="animalType">Tipo:</label>
+                <input type="text" id="animalType" name="tipo" required>
+            </div>
+            <div class="labels">
+                <label for="donos">Dono:</label>
+                <select id="donos" name="donos" required class="select-pet">
+                </select>
+            </div>
+            <div class="labels">
+                <button type="submit">Salvar Animal</button>
+            </div>
+        </form>
+
+    </section>
+
+    <section class="background-lista-clientes">
+        <div class="text-lista-cliente">
+            <h2>Lista de Animais</h2>
+            <div id="lista-nomes"></div>
+        </div>
+
+    </section>
+
+
+
+
+    <script src="../../backend/scriptAnimal.js"></script>
+</body>
+
+</html>

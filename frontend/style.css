@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+/* === */
+
+#background-1 {
+    height: 100vh;
+    background-image: url(../assets/background-1.png);
+    background-size: cover;
+
+
+}
+
+#background-2 {
+    height: 100vh;
+    background-image: url(../assets/background-2.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+
+
+}
+
+/* === */
+
+header {
+    max-height: 120px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #14a7e3;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    transition: ease-in-out 400ms;
+
+}
+
+header img {
+    height: 60px;
+    width: auto;
+    transition: ease-in-out 200ms;
+}
+
+header div {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* === */
+
+.welcome-text {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.welcome-text div {
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #14a7e3;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.feet-welcome {
+    height: 80px;
+    width: auto;
+}
+
+
+/* === */
+
+.text-pet div {
+    padding: 20px;
+}
+
+.text-pet {
+    max-width: 800px;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #14a7e3;
+}
+
+.button-pet {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid #14a7e3 2px;
+    color: #14a7e3;
+    background-color: #dde8ee;
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+}
+
+.button-pet:hover {
+    color: #dde8ee;
+    background-color: #14a7e3;
+}
+
+/* === */
+
+
+.modal-account {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.938);
+
+    display: none;
+    position: fixed;
+    z-index: 1;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.block-modal {
+    max-height: 600px;
+    max-width: 600px;
+    height: 100vh;
+    width: 100%;
+
+    border-radius: 20px;
+    padding: 20px;
+
+    background-color: #dde8ee;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.image-block-account {
+    max-height: 240px;
+    height: 100vh;
+    width: auto;
+}
+
+.block-modal button {
+    padding: 20px;
+    border: solid #14a7e3 1px;
+    border-radius: 10px;
+
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: #14a7e3;
+
+    min-width: 200px;
+
+    transition: ease-in-out 200ms;
+}
+
+.block-modal button:hover {
+    background-color: #14a7e3;
+    color: #dde8ee;
+}
+
+
+/* ===== */
+/* CLIENTE */
+/* ===== */
+
+#background-cadastro-cliente {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../assets/background-cadastrar-cliente.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background-lista-clientes {
+    height: 100vh;
+    background-color: #dde8ee;
+
+}
+
+.text-lista-cliente {
+    padding: 40px;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #14a7e3;
+}
+
+.cliente-form {
+    max-height: 600px;
+    max-width: 600px;
+    height: 100vh;
+    width: 100%;
+
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 20px;
+    border-radius: 15px;
+
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    backdrop-filter: blur(60px);
+    box-shadow: 0px 10px 30px 3px rgba(66, 66, 66, 0.37);
+
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+}
+
+.labels input {
+    width: 400px;
+    padding: 15px;
+
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+}
+
+.labels select{
+    width: 400px;
+    padding: 15px;
+
+    border-radius: 10px;
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+.labels button {
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #14a7e3;
+    font-weight: 600;
+
+    padding: 20px;
+    border-radius: 10px;
+    border: solid #14a7e3 1px;
+
+    background-color: #dde8ee;
+
+    transition: ease-in-out 200ms;
+}
+
+.labels button:hover {
+    background-color: #14a7e3;
+    color: white;
+}
+
+.blockCliente {
+    padding: 20px;
+    border: solid #14a7e3 1px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+/* === */
+/* PET */
+/* === */
+
+#lista-nomes {
+    margin-top: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-row-gap: 30px;
+    grid-column-gap: 10px;
+}
+
+.animal {
+    width: 100%;
+    max-width: 380px;
+    background-color: #a3dff7;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.animal .info {
+    cursor: pointer;
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #00b7ff;
+    transition: 0.5s;
+}
+
+.animal .info:hover {
+    transform: scale(1.05);
+    background-color: #0066f5;
+}
+
+.modalBG {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.358);
+    backdrop-filter: blur(1vi);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modalBG .modal {
+    z-index: 10;
+    width: 100%;
+    max-width: 600px;
+    min-height: 700px;
+    border-radius: 20px;
+    background-color: #edf5f8;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    filter: blur(0.7vi);
+    transition: 0.5s;
+}
+
+.modalBG .modal .close {
+    margin-left: auto;
+    top: 5px;
+    right: 5px;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: #00b7ff;
+    font-size: 30px;
+    font-weight: 500;
+    z-index: 11;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.modalBG .modal .close:hover {
+    background-color: #0066f5;
+    color: white;
+}
+
+
+.modalBG .modal h1 {
+    color: #00a2ff;
+    font-size: 45px;
+    margin-top: -70px;
+}
+
+.modalBG .modal #editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.modalBG .modal #editForm .labels {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modalBG .modal #editForm .labels {
+    color: #00a2ff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.modalBG .modal #editForm input {
+    background-color: #d8eaff;
+    color: #006eff;
+    width: 100%;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.modalBG .modal #editForm input:hover {
+    background-color: #1e7af3;
+    color: white;
+    width: 100%;
+    font-size: 20px;
+}
+
+.modalBG .modal #editForm select {
+    background-color: #d8eaff;
+    color: #006eff;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.modalBG .modal #editForm select:hover {
+    background-color: #1e7af3;
+    color: white;
+}
+
+.modalBG .modal #editForm button {
+    margin-top: auto;
+    background-color: #00b7ff;
+    width: 60%;
+    align-self: center;
+    margin-top: 60px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.modalBG .modal #editForm button:hover {
+    background-color: #1e7af3;
+    width: 100%;
+}
+
+.voltar {
+    position: absolute;
+    top: 1vi;
+    left: 1vi;
+    text-decoration: none;
+    color: #0066f5;
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.5s;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.voltar:hover {
+    color: #ffffff;
+    background-color: #0066f5;
+}
+
+#delete {
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid #e31414 1px;
+    text-align: center;
+    margin-top: auto;
+    background-color: #e84343;
+    width: 60%;
+    align-self: center;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#delete:hover {
+    background-color: #f30c0c;
+    width: 100%;
+}
+
+/* === */
+
+footer{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    font-family: Inter;
+    font-size: 20px;
+
+    background-color: #dde8ee;
+}
+
+footer p{
+    cursor: pointer;
+    margin: 10px;
+}
